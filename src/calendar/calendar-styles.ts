@@ -1,11 +1,8 @@
-import { makeStyles } from 'tss-react/mui'
+import { makeStyles } from '~/theme'
 
 export const useStyles = makeStyles()(() => ({
-  body: {
-    '& *': {
-      margin: 0,
-      padding: 0,
-      boxSizing: 'border-box',
-    },
+  table: {
+    borderCollapse: 'collapse',
+    '&, td, th': { border: '1px solid #ccc' },
   },
 }))
