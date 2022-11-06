@@ -57,7 +57,6 @@ const useCalendar = () => {
 
     const firstWeekSundayDay =
       firstWeekEmptyPositions === 0 ? 1 : previousMonthLastDay - firstWeekEmptyPositions
-    console.log(previousMonthLastDay, firstWeekEmptyPositions)
     totalWeeks.forEach((_, index) => {
       if (index === 0) {
         totalWeeks[index] = getDaysInWeek({
